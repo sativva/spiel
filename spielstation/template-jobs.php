@@ -53,8 +53,8 @@ if (isset($distance)) {
 ?>
 <section id="jobangebote-head" class="ArticleBanner ArticleBanner--purple">
   <div class="container">
-    <div class="row">
-      <div class="jobangebote-title col-xs-12 col-sm-8 col-md-6">Jobangebote</div>
+    <div >
+      <div class="jobangebote-title  col-sm-8 col-md-6">Jobangebote</div>
     </div>
   </div>
   <img class="head-img" src="http://www.thomasrondio.com/spiel/wp-content/uploads/2016/10/Statement_Julia_Rupscheit_353x120-1.jpg" alt="">
@@ -71,7 +71,7 @@ if (isset($distance)) {
   <div class="flex">
     <div class="params SearchForm results SearchForm--purple clearfix col-xs-12 col-sm-spiel-5 col-lg-3">
       <div class="big-screen">
-        <div class="row">
+        <div >
           <div class="searchJob-form">
             <div class="searchJob-wrap">
               <form action="<?php echo esc_url( home_url( '/jobangebote/' ) ); ?>" method="GET">
@@ -111,11 +111,11 @@ if (isset($distance)) {
               </form>
             </div>
           </div>
-          <hr class="col-xs-12 hidden-lg-spiel">
-          <div class="col-xs-12 hidden-lg-spiel">
+          <hr class="col-xs-12 hidden-lg-spiel hidden-xs" style="width: 90vw ">
+          <div class="col-xs-12 hidden-lg-spiel hidden-xs">
             <div class="initiativJob">
               <div class="initiativJob-block">
-                <div class="initiativJob-blockTitle">INITIATIVBEWERBUNG</div>
+                <div class="initiativJob-blockTitle">INITIATIVBEWERBUNG -6</div>
                 <div class="initiativJob-blockDesc">
                   Nicht das Passende dabei?<br/>
                   Hier geht es zu unseren Initiativbewerbungen.
@@ -136,7 +136,7 @@ if (isset($distance)) {
 <?php } else { ?>
   <div class="SearchForm SearchForm--purple clearfix col-xs-12 ">
     <div class="container">
-      <div class="row">
+      <div >
         <div class="col-xs-12 col-md-6">
           <div class="searchJob-wrap">
             <form action="<?php echo esc_url( home_url( '/jobangebote/' ) ); ?>" method="GET">
@@ -174,11 +174,11 @@ if (isset($distance)) {
             </form>
           </div>
         </div>
-        <!-- <hr class="col-xs-12"> -->
-        <div class="col-xs-12 col-md-6 hidden-xs hidden-md">
+        <hr class="col-xs-12 hidden-lg-spiel hidden-md" style="width: 80vw ">
+        <div class="col-xs-12 col-md-6 hidden-xs">
           <div class="initiativJob">
             <div class="initiativJob-block background">
-              <div class="initiativJob-blockTitle">INITIATIVBEWERBUNG</div>
+              <div class="initiativJob-blockTitle">INITIATIVBEWERBUNG -3</div>
               <div class="initiativJob-blockDesc">
                 Nicht das Passende dabei?<br/>
                 Hier geht es zu unseren Initiativbewerbungen.
@@ -202,7 +202,7 @@ if (isset($distance)) {
     <section class="FinderResult col-xs-12 col-sm-spiel-7 col-lg-6">
       <div class="Container--small">
         <div id='found' class="FinderResult-title col-xs-12 col-md-6 hidden"></div>
-        <div class="row">
+        <div >
           <div>
           <h6 id='table-title1' class='col-xs-4 hidden-xs'>Stellenangebot</h6>
           <h6 id='table-title2' class='col-xs-4 hidden-xs right'>Standort / Gebiet</h6>
@@ -581,7 +581,7 @@ if (isset($distance)) {
 
         <div class="MapRoute-form clearfix" data-id="<?php echo $key; ?>">
           <form action="<?php echo get_page_link(880);?>" method="POST">
-            <div class="row">
+            <div >
               <div class="MapRoute-form-adresse col-xs-12 col-sm-6">
                 <p>Anfahrt</p>
                 <input type="text" id="start" name="start" placeholder="Ort eingeben" required />
@@ -630,11 +630,11 @@ if (isset($distance)) {
     <?php if (isset($_GET['job_search_plz'])){ ?>
 
     <div class="SearchForm SearchForm--purple clearfix col-xs-12 col-sm-5 col-lg-3 hidden-lg-down">
-      <div class="row">
+      <div >
         <div class="col-xs-12">
           <div class="initiativJob">
             <div class="initiativJob-block">
-              <div class="initiativJob-blockTitle">INITIATIVBEWERBUNG</div>
+              <div class="initiativJob-blockTitle">INITIATIVBEWERBUNG -4</div>
               <div class="initiativJob-blockDesc">
                 Nicht das Passende dabei?<br/>
                 Hier geht es zu unseren Initiativbewerbungen.
@@ -651,15 +651,34 @@ if (isset($distance)) {
         </div>
       </div>
     </div>
+    <!-- <hr class="col-xs-12 hidden-lg-spiel hidden-sm hidden-md" style="width: 90vw "> -->
+    <div class="col-xs-12 hidden-lg-spiel hidden-sm hidden-md" style=" background: #ece8de;">
+      <div class="initiativJob">
+        <div class="initiativJob-block">
+          <div class="initiativJob-blockTitle">INITIATIVBEWERBUNG -7</div>
+          <div class="initiativJob-blockDesc">
+            Nicht das Passende dabei?<br/>
+            Hier geht es zu unseren Initiativbewerbungen.
+          </div>
+          <div class="initiativJob-blockBtns">
+            <a href="<?php bloginfo('url'); ?>/jobs/auszubildender-m-w/" class="btn btn--purple">Ausbildung</a>
+            <a href="<?php bloginfo('url'); ?>/jobs/servicetechniker-mw/" class="btn btn--purple">Technik</a>
+          </div>
+        </div>
+        <div class="initiativJob-link">
+          <a href="https://www.schmidtgruppe.de/karriere.html" target="_blank"> <span class="no-underline">></span> <u>Weitere Jobs innerhalb der <span class="txt-bold">SCHMIDT.</span>GRUPPE</u></a>
+        </div>
+      </div>
+    </div>
     <?php }else{ ?>
-        <div class="SearchForm SearchForm--purple clearfix col-xs-12 col-sm-5 col-lg-3 hidden-md">
-      <div class="row">
-    <hr class="col-xs-12">
+        <div class="SearchForm SearchForm--purple clearfix col-xs-12 col-sm-5 col-lg-3 hidden-md hidden-sm hidden-lg">
+      <div class="">
+      <!-- <hr class="col-xs-12" style="width: 90vw "> -->
 
-        <div class="col-xs-12">
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
           <div class="initiativJob">
-            <div class="initiativJob-block">
-              <div class="initiativJob-blockTitle">INITIATIVBEWERBUNG</div>
+            <div class="initiativJob-block background">
+              <div class="initiativJob-blockTitle">INITIATIVBEWERBUNG -5</div>
               <div class="initiativJob-blockDesc">
                 Nicht das Passende dabei?<br/>
                 Hier geht es zu unseren Initiativbewerbungen.
