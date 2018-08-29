@@ -1,0 +1,53 @@
+// FOOTER
+
+.Footer {
+  padding: 30px;
+
+  background-color: $blue;
+
+  @media screen and (max-width: $screen-sm) {
+    text-align: center;
+  }
+
+  &-logoWrapper {
+    display: inline-block;
+    margin-top: -2px;
+  }
+
+  &-logo {
+    height: 25px;
+  }
+
+  .menu-footer-nav-container {
+      float: right;
+      margin-top: 5px;
+
+      @media (max-width: $screen-sm) {
+        float: none;
+      }
+  }
+
+  & ul {
+
+    @media screen and (max-width: $screen-sm) {
+      float: none;
+      padding-top: 20px;
+    }
+  }
+
+  & ul li {
+    display: inline;
+    list-style: none;
+    padding-left: 20px;
+
+    @media screen and (max-width: $screen-sm) {
+      display: block;
+      padding-left: 0;
+      padding-top: 5px;
+    }
+
+    & a {
+      color: $white;
+    }
+  }
+}

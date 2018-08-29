@@ -1,0 +1,92 @@
+// BUTTON
+
+.btn {
+  padding: 10px 25px;
+
+  border-radius: 3px;
+  color: $white;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: rgba($white, 0.7);
+    color: $white;
+    text-decoration: none;
+  }
+
+  //
+  // COLORS
+  &--purple {
+    background-color: $purple;
+
+    &:hover, &:focus {
+      background-color: rgba($purple, 0.8);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &--turquoise {
+    background-color: $turquoise;
+
+    &:hover, &:focus {
+      background-color: rgba($turquoise, 0.8);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &--yellow {
+    background-color: $yellow;
+
+    color: $white;
+    -webkit-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+
+    &:hover, &:focus {
+      background-color: rgba($yellow, 0.8);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  // END COLORS
+  //
+
+
+  //
+  // SIZE
+  &--big {
+    padding: 15px 35px;
+
+    font-size: 16px;
+  }
+
+  // END SIZE
+  //
+
+
+  &--disabled {
+    position: relative;
+    opacity: 0.7;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+
+
+    }
+
+    &:hover, &:focus {
+      background-color: none;
+
+      cursor: default;
+    }
+  }
+
+
+}

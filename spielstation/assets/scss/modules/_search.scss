@@ -1,0 +1,77 @@
+// SEARCH
+
+.SearchForm-Header {
+  display: inline-block;
+  position: relative;
+
+  span {
+    cursor: pointer;
+  }
+
+  input {
+    background: transparent;
+    border: 2px solid $white;
+    display: none;
+    padding: 3px 5px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    width: 320px;
+
+    color: $white;
+    font-size: 14px;
+  }
+
+  &--black {
+    input {
+      border-color: $black;
+
+      color: $black;
+    }
+  }
+}
+
+.SearchHeader {
+  padding: 40px 0;
+  background-color: $lightbeige;
+
+  &-title {
+    text-transform: uppercase;
+    font-size: 18px;
+
+    &--italic {
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+}
+
+.SearchResult {
+  padding: 40px 0 240px 0;
+
+  &-post {
+    padding: 20px 0;
+
+    border-bottom: 1px solid $lightgrey;
+
+    &-title {
+      padding-bottom: 10px;
+
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &-terms {
+      padding: 2px;
+      background-color: $yellow;
+    }
+  }
+}
+
+.Search-NoResult {
+  padding: 60px 0 90px 0;
+
+  color: $black;
+  font-size: 24px;
+  text-align: center;
+}

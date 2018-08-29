@@ -1,0 +1,41 @@
+// CONTACT
+
+.Contact {
+  position: relative;
+  //height: calc(100vh - 183px);
+
+  min-height: 800px;
+
+  @media (max-width: $screen-sm) {
+    min-height: 0;
+  }
+
+  &-infos {
+    max-width: 320px;
+    padding: 20px;
+    position: absolute;
+    top: 90px;
+    left: 130px;
+
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    color: $white;
+    line-height: 1.6;
+
+    @media (max-width: $screen-sm) {
+      margin: 20px auto 30px;
+      max-width: none;
+      position: static;
+      width: 92%;
+    }
+
+    &-adresse {
+      padding-top: 20px;
+    }
+  }
+
+  &-map {
+    width: 100%;
+    min-height: 800px;
+  }
+}

@@ -1,0 +1,150 @@
+// FINDER RESULT
+
+.FinderResult {
+  padding: 60px 0;
+
+  background-color: $lightbeige;
+
+  &-title {
+    padding-bottom: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &-post {
+    margin-top: 40px;
+    background-color: $white;
+    display: table;
+    width: 100%;
+
+    @media (max-width: $screen-xs) {
+        display: block;
+      }
+
+    &-img {
+      width: 40%;
+      height: 1px;
+      display: table-cell;
+
+      @media (max-width: $screen-xs) {
+        display: block;
+        height: 200px;
+        width: 100%;
+      }
+
+      & > div {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &-content {
+      background: $white;
+      padding: 40px;
+      min-height: 250px;
+
+      display: table-cell;
+      width: 100%;
+
+      vertical-align: top;
+
+      @media (max-width: $screen-xs) {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+    }
+
+    &-title {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &-link {
+    padding-bottom: 20px;
+
+    & ul {
+      display: inline;
+    }
+
+    & ul li {
+      display: inline;
+      list-style: none;
+    }
+  }
+
+  &-linkRight {
+    text-align: right;
+    text-decoration: underline;
+
+    @media screen and (max-width: $screen-sm) {
+      text-align: left;
+    }
+  }
+
+  &-mapMarker {
+    padding-right: 20px;
+    
+    text-align: center;
+
+    &-pin {
+      position: relative;
+    }
+
+    &-number {
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+
+      color: $white;
+    }
+
+    &-distance {
+      padding-top: 5px;
+    }
+  }
+
+  &-action {
+    padding-top: 45px;
+
+    @media screen and (max-width: $screen-xs) {
+      //margin-top: 60px;
+      .btn-anfahrt {
+        display: block;
+        float: none !important;
+        margin-top: 20px;
+
+        text-align: center;
+      }
+    }
+    
+    & a {
+      display: inline-block;
+      margin: 0 5px 10px 5px;
+    }
+  }
+
+  &-action a:last-of-type {
+    //float: right;
+    margin-right: 0;
+
+    @media screen and (max-width: $screen-md) {
+      float: none;
+      margin-top: 5px;
+    }
+  }
+
+  &-action--right {
+    float: right;
+
+    & a {
+      margin-left: 5px;
+    }
+  }
+}

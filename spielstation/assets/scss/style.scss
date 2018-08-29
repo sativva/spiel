@@ -1,0 +1,50 @@
+// SCSS File for importing modules only
+
+// VENDORS
+@import "vendors/_bootstrap";
+
+@import "vendors/unslider/unslider-dots.css";
+@import "vendors/unslider/unslider.css";
+
+// BASE
+@import "base/_variables";
+@import "base/_markup";
+@import "base/_icons";
+
+// TRASH
+@import "base/_trash";
+
+// MODULES
+@import "modules/_article";
+@import "modules/_articleList";
+@import "modules/_articlePresentation";
+@import "modules/_banner";
+@import "modules/_contact";
+@import "modules/_finderResult";
+@import "modules/_footer";
+@import "modules/_guarantee";
+@import "modules/_header";
+@import "modules/_homenews";
+@import "modules/_initiativJob";
+@import "modules/_kontaktaufnahme";
+@import "modules/_route";
+@import "modules/_jobDetail";
+@import "modules/_jobSearch";
+@import "modules/_search";
+@import "modules/_searchJob";
+@import "modules/_searchForm";
+@import "modules/_slider";
+@import "modules/_userMessage";
+@import "modules/_virtualVisit";
+
+@import "modules/_button";
+@import "modules/_pager.scss";
+
+@import "modules/_map";
+@import "modules/_mapRoute";
+@import "modules/_fancySelect";
+@import "modules/_progressBar";
+
+@import "modules/_print";
+
+@import "modules/_ie10";

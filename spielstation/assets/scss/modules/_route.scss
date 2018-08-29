@@ -1,0 +1,193 @@
+// Route
+
+.Route {
+  padding: 60px 0;
+
+  background-color: $lightbeige;
+
+  &-title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &-return {
+    text-align: right;
+
+    & .btn {
+      font-size: 14px;
+      font-weight: lighter;
+    }
+  }
+
+  &-result {
+    padding: 40px;
+
+    background-color: $white;
+
+    @media (max-width: $screen-xs) {
+      padding: 40px 20px;
+    }
+
+    &-title {
+      padding-bottom: 40px;
+      border-bottom: 3px solid $turquoise;
+    }
+
+    &-title--bold {
+      padding-bottom: 10px;
+
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &-startAdresse {
+      padding: 20px 0;
+    }
+
+    &--right {
+      float: right;
+    }
+
+    &-action {
+      // display: inline-block;
+      padding-left: 20px;
+    }
+
+    &-route {
+      padding-top: 20px;
+
+      border-bottom: 1px solid $lightgrey;
+      border-top: 1px solid $lightgrey;
+    }
+  }
+
+  &-steps {
+    margin-bottom: 20px;
+
+    word-break: break-word;
+
+    &--right {
+      text-align: right;
+      @media screen and (max-width: $screen-sm) {
+        text-align: left;
+        padding-left: 60px;
+      }
+    }
+  }
+
+  &-icon {
+    height: 16px;
+    width: 16px;
+    background-image: url('https://maps.gstatic.com/mapfiles/api-3/images/maneuvers.png');
+    background-repeat: no-repeat;
+    vertical-align: top;
+
+    &-- {
+      visibility: hidden;
+    }
+
+    &--turn-left, &--keep-left {
+      background-position: 0 -413px;
+    }
+
+    &--turn-right, &--keep-right {
+      background-position: 0 -483px;
+    }
+
+    &--merge {
+      background-position: 0 -143px;
+    }
+
+    &--ramp-left {
+      background-position: 0 -598px;
+    }
+
+    &--ramp-right {
+      background-position: 0 -429px;
+    }
+
+    &--fork-left {
+      background-position: 0 -550px;
+    }
+
+    &--fork-right {
+      background-position: 0 -550px;
+    }
+
+    &--roundabout-left {
+      background-position: 0 -197;
+    }
+
+    &--roundabout-right {
+      background-position: 0 -232px;
+    }
+
+    &--turn-sharp-left {
+      background-position: 0 0;
+    }
+
+    &--turn-sharp-right {
+      background-position: 0 -582px;
+    }
+
+    &--uturn-left {
+      background-position: 0 -305px;
+    }
+
+    &--uturn-right {
+      background-position: 0 -35px;
+    }
+
+    &--turn-slight-left {
+      background-position: 0 -378px;
+    }
+
+    &--turn-slight-right {
+      background-position: 0 -51px;
+    }
+
+    &--ferry {
+      background-position: 0 -614px;
+
+    }
+
+    &--ferry-train {
+      background-position: 0 -566px;
+    }
+
+    &--straight {
+      background-position: 0 97px;
+    }
+
+  }
+
+  &-infos {
+    margin: 20px 0;
+    padding: 10px 0;
+
+    border-bottom: 1px solid $lightgrey;
+    border-top: 1px solid $lightgrey;
+
+    &-title {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &-infos-details {
+    display: inline-block;
+
+    @media screen and (max-width: $screen-sm) {
+      display: block;
+    }
+  }
+
+  &-infos-details:first-of-type {
+    margin-right: 190px;
+
+    @media screen and (max-width: $screen-sm) {
+      margin-right: 0;
+    }
+  }
+}

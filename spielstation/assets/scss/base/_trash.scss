@@ -1,0 +1,39 @@
+// TRASH
+.Container--small {
+  // margin: 0 60px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 980px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (max-width: $screen-lg) {
+    // width: 780px;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    width: 768px;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    width: auto;
+  }
+
+  &:before {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+.page-template-template-schmidt-php .ArticlePresentation-content { padding-top: 0 !important; }
+
+.menu-item-975 {
+  @extend .hidden-xs;
+  @extend .hidden-sm;
+}

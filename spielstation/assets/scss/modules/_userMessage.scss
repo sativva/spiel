@@ -1,0 +1,89 @@
+// User message
+
+.UserQuestions {
+  padding: 60px 0;
+
+  background-color: $blue;
+  color: $white;
+
+  &-title {
+    padding-bottom: 10px;
+
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    padding-bottom: 40px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  &--Kontaktaufnahme {
+    background-color: $orange;
+  }
+}
+
+.UserMessage {
+  padding: 60px 0;
+
+  text-align: center;
+
+  &-formGender {
+    margin: auto;
+    padding-bottom: 40px;
+    width: 475px;
+
+    text-align: left;
+
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
+    }
+
+    & label {
+      margin-left: 20px;
+    }
+  }
+
+
+
+  &-formGroup {
+    margin-bottom: 40px;
+  }
+
+
+  & input {
+
+    &[type="text"] {
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 475px;
+
+      border-radius: 3px ;
+      border: 1px solid $lightgrey;
+    }
+
+    &[type="submit"] {
+      padding: 10px 20px;
+
+      background-color: $blue;
+      border: 0;
+      border-radius: 3px;
+      color: $white;
+    }
+
+    &[type="radio"] {
+      margin-right: 10px;
+    }
+  }
+
+  textarea {
+    border: 1px solid $lightgrey;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 10px;
+    width: 475px;
+  }
+}

@@ -1,0 +1,63 @@
+.ArticleList {
+	background-color: $beige;
+}
+
+.ArticleListWrap {
+	background-color: $white;
+    margin-top: 50px;
+    padding: 25px 25px 100px 25px;
+}
+
+.ArticleList {
+
+	&-item {
+		border-bottom: 5px solid $yellow;
+		padding: 40px 20px;
+	}
+
+	&-img {
+		background-size: cover;
+		height: 200px;
+    	width: 100%; 
+	}
+
+	&-h3 {
+		padding-bottom: 25px;
+
+		font-family: $font-family-sans-serif;
+		font-size: 16px;
+		font-weight: normal;
+		text-transform: uppercase;
+
+		&:after {
+			background-color: $yellow;
+			margin-top: 20px;
+			content: "";
+			display: block;
+			height: 5px;
+			width: 50px;
+		}
+	}
+	
+	&-date {
+		padding-bottom: 12px;
+
+		font-family: $font-family-sans-serif;
+		font-weight: normal;
+	}
+	
+	&-title {
+		padding-bottom: 15px;
+
+		font-family: $font-family-sans-serif;
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+	&-excerpt {
+		padding-bottom: 20px;
+		// font-family: $font-family-serif;
+	}
+}
+

@@ -1,0 +1,15 @@
+// MAP
+
+.Map {
+  width: 100%;
+  height: 400px;
+
+  @media (max-width: $screen-xs) {
+  	display: none;
+  }
+}
+
+.labelsmap {
+	color: #fff;
+	font-size: 11px;
+}

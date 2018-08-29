@@ -1,0 +1,79 @@
+// Article Presentation
+
+.ArticlePresentation-banner {
+  background-color: $yellow;
+  color: $white;
+  font-size: 50px;
+
+  &-title {
+    padding: 40px 0;
+  }
+
+  & img {
+    @media screen and (max-width: $screen-md) {
+      display: none;
+    }
+  }
+}
+
+.ArticlePresentation {
+  background-color: $lightbeige;
+
+  &-content {
+    margin-bottom: 60px;
+    padding: 60px;
+    background-color: $white;
+
+    & h2 {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+
+      border-bottom: 4px solid $yellow;
+      font-size: 22px;
+      font-weight: bold;
+      // text-transform: uppercase;
+    }
+
+    & img {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 45px;
+    }
+  }
+
+  @media screen and (max-width : $screen-sm) {
+
+    &-content {
+      padding: 40px 20px;
+    }
+
+    & img {
+      padding-top: 0;
+    }
+  }
+}
+
+.ArticleBanner--picture {
+  overflow: hidden;
+
+  background-color: $white;
+
+  @media screen and (max-width: $screen-sm) {
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+
+  &-title {
+    padding-top: 40px;
+
+    @media screen and (max-width: $screen-sm) {
+      font-size: 22px;
+    }
+  }
+
+  & img {
+    @media screen and (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+}

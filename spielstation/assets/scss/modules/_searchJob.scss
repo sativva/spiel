@@ -1,0 +1,66 @@
+.searchJob {
+
+	&-wrap {
+		text-align: right;
+
+		input, .fancy-select {
+			margin-right: 0 !important;
+		}
+
+		// input[placeholder] {
+		// 	color: $lightgrey;
+		// }
+
+		.fancy-select .trigger, .fancy-select .options {
+		    width: 320px;
+
+		    @media (max-width: $screen-sm) {
+		    	margin: 0 !important;
+		    	width: 100%;
+		    }
+		}
+
+		.fancy-select {
+			@media (max-width: $screen-sm) {
+				margin-top: 0;
+			}
+		}
+
+		label {
+			padding-right: 10px;
+
+			color: $white;
+			font-weight: bold;
+			line-height: 45px;
+
+			@media (max-width: $screen-sm) {
+				text-align: left;
+			}
+		}
+
+		.searchJob-formItem {
+			padding: 5px 23px !important;
+
+			@media (max-width: $screen-sm) {
+			    width: 100%;
+
+			    text-align: left;
+
+			    input {
+			    	margin: 0 !important;
+			    	max-width: 380px;
+			    	width: 80% !important;
+			    }
+			}
+
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+
+
+	}
+
+
+
+}

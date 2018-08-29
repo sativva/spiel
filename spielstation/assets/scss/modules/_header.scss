@@ -1,0 +1,341 @@
+// HEADER
+
+.Header {
+  min-height: 680px;
+  position: relative;
+
+  background-image: url('assets/img/home/home-start.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 40px;
+
+
+
+  @media screen and (max-width: $screen-md) {
+    min-height: 500px;
+    background-position-y: 50px;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    min-height: 500px;
+    background-position: center;
+    background-position-y: 70px;
+  }
+
+  @media screen and (max-width: 480px) {
+    min-height: 560px;
+    background-position: -160px 70px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 1.5),
+      (min-resolution: 240dpi) {
+        min-height: 700px;
+        background-image: url('assets/img/home/home-start@2x.jpg');
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 320dpi) {
+      min-height: 700px;
+      background-image: url('assets/img/home/home-start@2x.jpg');
+  }
+
+  @media screen and (min-width: 1800px) {
+    min-height: 840px;
+  }
+
+  @media screen and (min-width: 2300px) {
+    min-height: 980px;
+  }
+
+  @media screen and (min-width: 2800px) {
+    min-height: 1200px;
+  }
+  
+  @media screen and (min-width: 3400px) {
+    min-height: 1400px;
+  }
+  @media screen and (min-width: 4000px) {
+    min-height: 1700px;
+  }
+  @media screen and (min-width: 4600px) {
+    min-height: 2000px;
+  }
+
+
+
+  &-logo {
+    margin-top: 30px;
+    width: 180px;
+
+    @media (max-width: $screen-lg) {
+      margin: 20px 0;
+    }
+  }
+
+
+
+  &-menu-icons {
+    padding: 10px 0;
+
+    font-size: 18px;
+    text-align: right;
+
+    @media (max-width: $screen-lg) {
+      margin-top: 15px;
+    }
+
+    & img {
+      padding-left: 10px;
+    }
+  }
+
+  &-menu {
+    padding-bottom: 40px;
+    position: relative;
+
+    color: $black;
+
+    @media screen and (max-width: $screen-lg) {
+      padding-bottom: 10px;
+    }
+
+    & ul li {
+      display: inline;
+      list-style: none;
+      padding: 0 0 0 8px;
+    }
+
+    & li.active {
+      color: $yellow;
+    }
+  }
+
+  &-menu--home {
+    background-color: $white;
+  }
+
+  &-nav {
+    display: block;
+    float: right;
+
+    @media (max-width: $screen-lg) {
+      display: none;
+
+      position: absolute;
+      z-index: 999;
+      background: white;
+      width: 100%;
+      top: 60px;
+      left: 0;
+      right: 0;
+      padding: 10px;
+    }
+
+    ul > li {
+      display: inline-block;
+      margin-left: -4px;
+
+      @media (max-width: $screen-lg) {
+        border-bottom: 2px solid $lightgrey;
+        width: 100%;
+
+        line-height: 36px;
+
+        &:first-child {
+          border-top: 2px solid $lightgrey;
+        }
+
+        a {
+          border-bottom: 0 !important;
+          display: block;
+          padding-bottom: 0 !important;
+        }
+      }
+
+      &:hover {
+        a {
+          border-bottom: 4px solid $yellow;
+        }
+
+        &:nth-child(2) a { border-bottom: 4px solid $orange; }
+        &:nth-child(3) a { border-bottom: 4px solid $green; }
+        &:nth-child(4) a { border-bottom: 4px solid $red; }
+        &:nth-child(5) a { border-bottom: 4px solid $purple; }
+
+        @media (max-width: $screen-lg) {
+          a { border-bottom: 0; }
+        }
+      }
+
+
+
+      & > a {
+        border-bottom: 4px solid transparent;
+        padding-bottom: 5px;
+      }
+
+      &.menu-item-has-children {
+        position: relative;
+
+        .sub-menu {
+          display: none;
+          opacity: 0;
+
+          @media (max-width: $screen-lg) {
+            padding-top: 0 !important;
+
+            li.menu-item {
+              border-bottom: 0;
+              border-top: 0;
+              padding: 5px 10px;
+            }
+          }
+
+        }
+
+        &:hover, &:focus {
+
+          .sub-menu {
+            background: $white;
+            display: block;
+            padding: 15px !important;
+            position: absolute;
+            width: 260px;
+            left: 50%;
+            margin-left: -130px;
+            top: 26px;
+            z-index: 20;
+
+            opacity: 1;
+
+            & > li {
+              display: block;
+            }
+
+            a {
+              color: #8d8d8d;
+              border-bottom: 0;
+              line-height: 22px;
+
+              &:hover {
+                color: $yellow;
+              }
+            }
+
+            @media (max-width: $screen-lg) {
+              margin-left: 0;
+              position: static;
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    
+  }
+
+  &-searchForm {
+    bottom: 0;
+    padding: 30px 0;
+    position: absolute;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+
+    fieldset {
+      border: 0 !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    & input {
+      padding: 20px;
+      border: 0;
+      outline: none;
+
+      font-size: 18px;
+      line-height: normal;
+      vertical-align: top;
+
+      @media screen and (max-width: $screen-xs) {
+        padding: 15px 10px;
+
+        font-size: 12px;
+        line-height: 28px;
+      }
+    }
+
+    & input[type="text"] {
+      border-radius: 3px 0 0 3px;
+      width: 490px;
+
+      @media screen and (max-width: $screen-sm) {
+        width: 330px;
+
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        width: 190px;
+
+        font-size: 16px;
+      }
+    }
+
+    & input[type="submit"] {
+      background-color: $yellow;
+      border: 0;
+      border-radius: 0 3px 3px 0;
+      margin-left: -8px;
+      margin-top: 0;
+      outline: none;
+      padding: 20px;
+
+      color: $white;
+      font-size: 18px;
+      line-height: normal;
+      vertical-align: top;
+
+      @media (max-width: $screen-sm) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        line-height: 28px;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        padding: 15px;
+
+        font-size: 16px;
+      }
+
+    }
+  }
+}
+
+
+
+  .MobileNavIcon {
+    display: block;
+    float: right;
+    margin: 30px 0;
+
+    font-size: 18px;
+  }
+
+
+
+
+
+
+
+
+
+
+

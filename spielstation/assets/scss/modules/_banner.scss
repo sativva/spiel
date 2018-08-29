@@ -1,0 +1,161 @@
+.ArticleBanner {
+
+	&--green {
+		background-color: $green;
+	}
+
+	&--orange {
+		background-color: $orange;
+
+		img {
+    		@media screen and (max-width: $screen-sm) {
+    			display: none;
+    		}
+		}
+	}
+
+	&--purple {
+		background-color: $purple;
+		background-image: url(assets/img/tpl/banner-purple.png);
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 330px;
+
+		@media screen and (max-width: $screen-lg) {
+			height: 250px;
+	    }
+
+		@media screen and (max-width: $screen-sm) {
+	        background-size: 0;
+	        height: 160px;
+	    }
+	}
+	
+	&--red {
+		background-color: $red;
+	}
+	
+	&--yellow {
+		background-color: $yellow;
+	}
+
+	&--schmidt {
+		background-image: url(assets/img/tpl/banner-schmidt-gruppe.jpg);
+	    background-size: cover;
+	    background-position: center center;
+	    min-height: 450px;
+	    padding-top: 120px;
+	    background-repeat: no-repeat;
+
+	    @media all and (max-width: 1650px) {
+	    	min-height: 320px;
+	    }
+
+	    @media all and (max-width: 767px) {
+	    	background-size: 760px;
+			min-height: 0;
+			padding-top: 40px;
+	    }
+
+	    @media (min-width: 1599px) {
+			height: 480px;
+			min-height: 480px;
+		}
+		@media (min-width: 2000px) {
+			height: 720px;
+			min-height: 720px;
+		}
+		@media (min-width: 3000px) {
+			height: 1200px;
+			min-height: 1200px;
+		}
+		@media (min-width: 4000px) {
+			height: 1700px;
+			min-height: 1700px;
+		}
+	}
+
+	&--spiel {
+		background-image: url(assets/img/tpl/banner-spiel.png);
+	    background-size: auto 100%;
+	    background-position: top right;
+	    min-height: 330px;
+	    background-repeat: no-repeat;
+
+	    @media all and (max-width: 1440px) {
+	    	background-position: -40px;
+	    	
+	    	font-size: 36px;
+	    }
+
+	    @media all and (max-width: 1100px) {
+	    	background-position: -300px;
+
+	    	font-size: 28px;
+	    }
+
+	    @media all and (max-width: 992px) {
+	    	background-image: none;
+	    	min-height: 0;
+	    	padding: 0 0 20px 0;
+
+	    	font-size: 36px;
+	    }
+	}
+
+	&--photoFull {
+		background-color: $purple;
+	    background-position: top center;
+	    background-size: cover;
+	    // min-height: auto;
+	    position: relative;
+	    z-index: 9;
+
+		@media all and (min-width: 1600px) {
+	    	.Slider {
+	    		height: auto;
+	    	}
+	    }
+	    @media all and (min-width: 2500px) {
+	    	.Slider {
+	    		height: auto;
+	    	}
+	    }
+	    @media all and (min-width: 3600px) {
+	    	.Slider {
+	    		height: auto;
+	    	}
+	    }
+	    @media all and (min-width: 4000px) {
+	    	.Slider {
+	    		height: auto;
+	    	}
+	    }
+
+	    &:before {
+	    	background: rgba($black, .2);
+	    	bottom: 0;
+	    	//content: "";
+	    	left: 0;
+	    	position: absolute;
+	    	right: 0;
+	    	top: 0;
+	    }
+
+	    @media all and (max-width: $screen-sm) {
+	    	min-height: 0;
+
+	    	.unslider {
+	    		display: none;
+	    	}
+	    }
+
+	    img {
+	    	display: block !important;
+	    }
+	}
+
+	
+
+}

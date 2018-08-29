@@ -1,0 +1,143 @@
+// JOB DETAIL
+
+.JobDetail-banner {
+  height: 540px;
+
+  background-image: url('assets/img/home/home-start.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -130px;
+
+  @media (max-width: 1600px) {
+    max-height: 540px;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    max-height: 400px;
+    background-position-y: -80px;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    max-height: 400px;
+    background-position-y: -40px;
+  }
+
+  @media screen and (max-width: $screen-xs) {
+    background-position: center -30px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 240dpi) {
+      max-height: 540px;
+      background-image: url('assets/img/home/home-start@2x.jpg');
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 320dpi) {
+      background-image: url('assets/img/home/home-start@2x.jpg');
+  }
+
+  @media (min-width: 1599px) {
+    height: 800px;
+    max-height: 800px;
+  }
+  @media (min-width: 2000px) {
+    height: 1000px;
+    max-height: 1000px;
+  }
+  @media (min-width: 3000px) {
+    height: 1500px;
+    max-height: 1500px;
+  }
+  @media (min-width: 4000px) {
+    height: 2000px;
+    max-height: 2000px;
+  }
+
+}
+
+.JobDetail {
+  background-color: $lightbeige;
+
+  &-content {
+    padding: 60px 100px;
+    background-color: $white;
+
+    @media screen and (max-width: $screen-sm) {
+      padding: 40px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      padding: 20px;
+    }
+  }
+
+  &-content .btn--turquoise {
+    @media screen and (max-width: $screen-sm) {
+      float: none!important;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+  }
+
+  &-title {
+    font-size: $font-size-h1;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-xs) {
+      margin-top: 60px;
+
+      font-size: 20px;
+    }
+  }
+
+  &-subtitle {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  &-date {
+    margin-bottom: 40px;
+  }
+}
+
+.JobDescription {
+  padding: 40px 0 10px;
+
+  line-height: 1.6;
+
+  @media (max-width: $screen-xs) {
+    padding-top: 20px;
+  }
+
+  & h1 {
+    margin-top: 20px;
+    padding-top: 30px;
+
+    border-top: 3px solid $purple;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:first-of-type {
+      margin-top: 0;
+      border: 0;
+    }
+  }
+
+  & ul li {
+    margin-left: 20px;
+    position: relative;
+
+    list-style: none;
+  }
+
+  & ul li:before {
+    left: -20px;
+    position: absolute;
+
+    content : "\f00d";
+    color: $purple;
+    font-family: 'icon';
+  }
+}

@@ -1,0 +1,26 @@
+// MARKUP
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit ;
+    text-decoration: none;
+  }
+}
+
+ul {
+  -moz-margin-start: 0 !important;
+  -moz-padding-start: 0 !important;
+  -moz-margin-after: 0 !important;
+  -webkit-padding-start: 0 !important;
+  -webkit-margin-before: 0 !important;
+  -webkit-margin-after: 0 !important;
+
+
+}
+
+.txt-bold {
+  font-weight: bold;
+}

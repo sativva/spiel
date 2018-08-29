@@ -1,0 +1,20 @@
+.JobDescription {
+  padding: 40px 0;
+
+  line-height: 1.6;
+
+  &-title {
+    margin-top: 20px;
+    padding-top: 30px;
+
+    border-top: 3px solid $purple;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:first-of-type {
+      margin-top: 0;
+      border: 0;
+    }
+  }
+}

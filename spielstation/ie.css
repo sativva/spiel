@@ -1,0 +1,9 @@
+/* Fix form search submit */
+.ie10 .Header-searchForm input[type=submit] {
+	margin-top: -2px;
+	height: 61px;
+
+	line-height: normal;
+
+	position: absolute;
+}

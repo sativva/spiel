@@ -1,0 +1,73 @@
+// VIRTUAL VISIT
+
+.VirtualVisit {
+  min-height: 620px;
+  position: relative;
+
+  background-image: url('assets/img/home/img-360.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: $screen-md) {
+    min-height: 480px;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    min-height: 360px;
+  }
+
+  @media screen and (max-width: $screen-xs) {
+    min-height: 400px;
+  }
+
+
+  @media (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 240dpi) {
+      // min-height: 400px;
+      background-image: url('assets/img/home/img-360@2x.png');
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 320dpi) {
+      min-height: 620px;
+      background-image: url('assets/img/home/img-360@2x.png');
+  }
+
+  &-content {
+    margin-top: 160px;
+    padding: 40px 190px;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: $white;
+    text-align: center;
+
+    @media screen and (max-width: $screen-lg) {
+      margin-top: 20px;
+      padding: 40px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      margin-top: 80px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      margin-top: 20px;
+      padding: 40px 20px;
+    }
+  }
+
+  &-title {
+    padding-bottom: 20px;
+
+    font-size: $font-size-h1;
+    text-transform: uppercase;
+  }
+
+  &-description {
+    padding-bottom: 40px;
+  }
+}
